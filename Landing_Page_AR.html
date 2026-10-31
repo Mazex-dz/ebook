@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUILD WITH AI AGENTS: الدليل الهندسي الشامل لبناء المواقع والأنظمة الرقمية (1,990 دج) | @mkill_9</title>
+  <meta name="description" content="اصنع مواقع عالمية لشركات عالمية وأجنبية بآلاف الدولارات ومنصات طبية وتجارية في الجزائر بـ 15 إلى 45 مليون سنتيم. كتاب 406 صفحة + 3 مشاريع برمجية كاملة بـ 1,990 دج عبر BaridiMob." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg-stock: #EEF1F4;
+      --bg-ledger: #E3E7EC;
+      --bg-elevated: #F8FAFC;
+      --bg-slate: #12161F;
+      --bg-slate-raised: #1B2230;
+      --ink-primary: #12161F;
+      --ink-secondary: #2D3648;
+      --ink-muted: #475267;
+      --ink-on-slate: #F8FAFC;
+      --ink-muted-slate: #CBD5E1;
+      --accent-teal: #0B615A;
+      --accent-teal-hover: #084C46;
+      --accent-teal-soft: #D6ECE9;
+      --accent-amber: #F59E0B;
+      --accent-amber-hover: #D97706;
+      --accent-amber-ink: #78350F;
+      --accent-amber-soft: #FEF3C7;
+      --rule-heavy: #12161F;
+      --rule-hairline: #C5CDD8;
+      --rule-slate: #2A3244;
+      --shadow-elevated: 0 10px 28px -8px rgba(18, 22, 31, 0.14), 0 2px 6px -1px rgba(18, 22, 31, 0.07);
+      --font-display: 'Cairo', sans-serif;
+      --font-sans: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+      --max-w: 1360px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-stock);
+      color: var(--ink-primary);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--bg-stock);
+      color: var(--ink-primary);
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background-color: var(--accent-amber);
+      color: var(--ink-primary);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent-amber-hover);
+      outline-offset: 2px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-ledger);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94A3B8;
+      border: 2px solid var(--bg-ledger);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--ink-secondary);
+    }
+
+    .tabular, code, .pin-coord, .deal-tag, .btn-price-pill {
+      font-variant-numeric: tabular-nums;
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+
+    /* TOP DARK-SLATE NAVIGATION BAR */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--bg-slate);
+      color: var(--ink-on-slate);
+      border-bottom: 1px solid var(--rule-slate);
+      height: 56px;
+      display: flex;
+      align-items: center;
+    }
+
+    .top-nav-inner {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-id {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--ink-on-slate);
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      font-weight: 600;
+      direction: ltr;
+    }
+
+    .brand-monogram {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: var(--accent-amber);
+      color: var(--ink-primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.78rem;
+      border: 1px solid rgba(248, 250, 252, 0.35);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--ink-muted-slate);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding: 6px 10px;
+      transition: color 150ms ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink-on-slate);
+    }
+
+    .nav-sep {
+      color: #64748B;
+      font-size: 0.80rem;
+      user-select: none;
+    }
+
+    .top-buy-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--accent-amber);
+      color: var(--ink-primary);
+      text-decoration: none;
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 3px;
+      transition: background-color 150ms ease, transform 120ms ease;
+    }
+
+    .top-buy-pill:hover {
+      background-color: var(--accent-amber-hover);
+      color: var(--ink-primary);
+      transform: translateY(-1px);
+    }
+
+    /* DOSSIER OUTER SHEET */
+    .dossier-wrapper {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 12px 20px 64px;
+    }
+
+    .sheet-index-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--ink-secondary);
+      padding: 4px 2px 8px;
+      border-bottom: 2px solid var(--rule-heavy);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* FIRST VIEWPORT: TOP LEDGER HEADER */
+    .top-ledger-box {
+      margin-top: 4px;
+      border: 1px solid var(--rule-heavy);
+      background-color: var(--bg-stock);
+      padding: 12px;
+      position: relative;
+    }
+
+    .ledger-col-headers {
+      display: grid;
+      grid-template-columns: 1.5fr 164px 1fr;
+      border: 1px solid var(--rule-hairline);
+      border-bottom: none;
+      background-color: var(--bg-ledger);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--ink-secondary);
+    }
+
+    .ledger-col-headers > div {
+      padding: 6px 14px;
+      border-left: 1px solid var(--rule-hairline);
+    }
+
+    .ledger-col-headers > div:last-child {
+      border-left: none;
+    }
+
+    .ledger-main-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 164px 1fr;
+      align-items: center;
+      border: 1px solid var(--rule-hairline);
+      background-color: var(--bg-elevated);
+    }
+
+    .ledger-headline-cell {
+      padding: 20px 22px;
+      border-left: 1px solid var(--rule-hairline);
+    }
+
+    .ledger-headline-cell h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.55rem, 2.35vw, 2.15rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--ink-primary);
+      margin-bottom: 8px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .ledger-headline-cell p {
+      font-size: 0.92rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+      max-width: 66ch;
+    }
+
+    .ledger-stamp-cell {
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid var(--rule-hairline);
+      height: 100%;
+    }
+
+    .verification-stamp {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      border: 2px solid var(--rule-heavy);
+      background-color: var(--bg-elevated);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      box-shadow: inset 0 0 0 3px var(--bg-stock), inset 0 0 0 4px var(--rule-heavy);
+      transform: rotate(3deg);
+    }
+
+    .stamp-code {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-amber-ink);
+    }
+
+    .stamp-number {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--ink-primary);
+      margin: 2px 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stamp-sub {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink-secondary);
+    }
+
+    .ledger-checkout-cell {
+      padding: 18px 20px;
+      background-color: var(--bg-elevated);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-checkout-baridimob {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.90rem;
+      transition: background-color 150ms ease, transform 120ms ease;
+      cursor: pointer;
+      border: 1px solid rgba(18, 22, 31, 0.25);
+      background-color: var(--accent-amber);
+      color: var(--ink-primary);
+      font-family: var(--font-sans);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .btn-checkout-baridimob:hover {
+      background-color: var(--accent-amber-hover);
+      color: var(--ink-primary);
+      transform: translateY(-1px);
+    }
+
+    .btn-label-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-price-pill {
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 2px;
+      background-color: rgba(18, 22, 31, 0.14);
+      color: inherit;
+    }
+
+    .checkout-guarantee-note {
+      font-size: 0.78rem;
+      color: var(--ink-secondary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* INDEXED INSPECTION STRIP */
+    .inspection-strip-box {
+      margin-top: 10px;
+      border: 1px solid var(--rule-heavy);
+      background-color: var(--bg-stock);
+      padding: 14px;
+    }
+
+    .strip-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--rule-hairline);
+    }
+
+    .strip-header-bar h2 {
+      font-family: var(--font-display);
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+
+    .strip-header-meta {
+      font-size: 0.80rem;
+      color: var(--ink-secondary);
+    }
+
+    .inspection-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .client-plate-card {
+      border: 1px solid var(--rule-hairline);
+      background-color: var(--bg-elevated);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+      text-align: right;
+      padding: 0;
+      color: var(--ink-primary);
+      font-family: inherit;
+    }
+
+    .client-plate-card:hover,
+    .client-plate-card.active {
+      border-color: var(--accent-amber);
+      box-shadow: var(--shadow-elevated);
+      transform: translateY(-2px);
+    }
+
+    .plate-pin-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 7px;
+      background-color: var(--bg-ledger);
+      border-bottom: 1px solid var(--rule-hairline);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      direction: ltr;
+    }
+
+    .pin-coord {
+      color: var(--accent-teal);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .pin-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--accent-amber);
+      display: inline-block;
+    }
+
+    .deal-tag {
+      background-color: var(--accent-amber-soft);
+      color: var(--accent-amber-ink);
+      padding: 1px 5px;
+      border-radius: 2px;
+      font-weight: 800;
+      font-size: 0.75rem;
+    }
+
+    .plate-thumb-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background-color: var(--bg-slate);
+      border-bottom: 1px solid var(--rule-hairline);
+    }
+
+    .plate-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 250ms ease;
+    }
+
+    .client-plate-card:hover .plate-thumb-wrap img {
+      transform: scale(1.04);
+    }
+
+    .plate-caption {
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .plate-title {
+      font-size: 0.80rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+      line-height: 1.3;
+    }
+
+    .plate-sub {
+      font-size: 0.75rem;
+      color: var(--ink-muted);
+      line-height: 1.3;
+    }
+
+    .strip-summary-footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--rule-hairline);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .strip-summary-footer p {
+      font-size: 0.90rem;
+      color: var(--ink-secondary);
+    }
+
+    .inspect-hint-badge {
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--accent-amber-ink);
+      background-color: var(--accent-amber-soft);
+      border: 1px solid rgba(217, 119, 6, 0.35);
+      padding: 5px 12px;
+      border-radius: 2px;
+    }
+
+    /* INTERACTIVE CASE STUDY INSPECTOR PANEL */
+    .inspector-workbench {
+      margin-top: 16px;
+      border: 1px solid var(--rule-heavy);
+      background-color: var(--bg-elevated);
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+    }
+
+    .inspector-screen-pane {
+      padding: 16px;
+      border-left: 1px solid var(--rule-hairline);
+      background-color: var(--bg-ledger);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .inspector-Viewport-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--ink-secondary);
+      direction: ltr;
+    }
+
+    .inspector-frame {
+      border: 1px solid var(--rule-heavy);
+      background-color: var(--bg-slate);
+      aspect-ratio: 16 / 8.2;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .inspector-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .inspector-spec-pane {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .inspector-spec-pane h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+      line-height: 1.3;
+    }
+
+    .spec-kv-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .spec-kv-table th,
+    .spec-kv-table td {
+      padding: 8px;
+      border-bottom: 1px solid var(--rule-hairline);
+      text-align: right;
+    }
+
+    .spec-kv-table th {
+      font-size: 0.80rem;
+      color: var(--ink-muted);
+      width: 36%;
+    }
+
+    .spec-kv-table td {
+      font-weight: 600;
+      color: var(--ink-primary);
+    }
+
+    .inspector-pitch-note {
+      padding: 12px;
+      background-color: var(--bg-stock);
+      border: 1px solid var(--rule-hairline);
+      font-size: 0.88rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+    }
+
+    /* GENERIC SECTION CONTAINER */
+    .dossier-section {
+      margin-top: 36px;
+      border: 1px solid var(--rule-heavy);
+      background-color: var(--bg-stock);
+    }
+
+    .section-ledger-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 20px;
+      background-color: var(--bg-ledger);
+      border-bottom: 1px solid var(--rule-heavy);
+    }
+
+    .section-ledger-bar h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 1.9vw, 1.55rem);
+      font-weight: 800;
+      color: var(--ink-primary);
+    }
+
+    .section-code-tag {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent-amber-ink);
+      background-color: var(--accent-amber-soft);
+      border: 1px solid var(--rule-hairline);
+      padding: 5px 10px;
+    }
+
+    /* SECTION 2: DEAL MATH & INTERACTIVE ROI CALCULATOR */
+    .roi-split-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+    }
+
+    .roi-comparison-pane {
+      padding: 22px;
+      border-left: 1px solid var(--rule-hairline);
+    }
+
+    .roi-comparison-pane h3,
+    .roi-calculator-pane h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: var(--ink-primary);
+    }
+
+    .comparison-ledger-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .comparison-ledger-table th,
+    .comparison-ledger-table td {
+      padding: 10px;
+      border: 1px solid var(--rule-hairline);
+      text-align: right;
+    }
+
+    .comparison-ledger-table thead th {
+      background-color: var(--bg-ledger);
+      font-size: 0.80rem;
+      color: var(--ink-secondary);
+    }
+
+    .comparison-ledger-table .highlight-col {
+      background-color: var(--accent-amber-soft);
+      font-weight: 700;
+      color: var(--accent-amber-ink);
+    }
+
+    .roi-calculator-pane {
+      padding: 22px;
+      background-color: var(--bg-elevated);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .calc-lead-copy {
+      font-size: 0.90rem;
+      color: var(--ink-secondary);
+      margin-bottom: 12px;
+    }
+
+    .calc-control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .calc-control-group label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--ink-secondary);
+    }
+
+    .calc-range {
+      width: 100%;
+      accent-color: var(--accent-amber-hover);
+      cursor: pointer;
+    }
+
+    .calc-output-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .calc-metric-box {
+      padding: 12px;
+      border: 1px solid var(--rule-hairline);
+      background-color: var(--bg-stock);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .calc-metric-val {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--accent-amber-ink);
+      direction: ltr;
+      text-align: right;
+    }
+
+    .calc-metric-lbl {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      margin-top: 2px;
+    }
+
+    /* SECTION 3: CURRICULUM */
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+    }
+
+    .chapters-list-pane {
+      padding: 20px;
+      border-left: 1px solid var(--rule-hairline);
+    }
+
+    .part-block {
+      margin-bottom: 16px;
+      border: 1px solid var(--rule-hairline);
+      background-color: var(--bg-elevated);
+    }
+
+    .part-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .part-header {
+      padding: 8px 12px;
+      background-color: var(--bg-ledger);
+      border-bottom: 1px solid var(--rule-hairline);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+
+    .chapter-rows {
+      list-style: none;
+    }
+
+    .chapter-rows li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      padding: 7px 12px;
+      border-bottom: 1px solid var(--rule-hairline);
+      font-size: 0.88rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .chapter-rows li:last-child {
+      border-bottom: none;
+    }
+
+    .ch-num {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--accent-teal);
+      margin-left: 6px;
+    }
+
+    .ch-pages {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--ink-muted);
+      white-space: nowrap;
+      direction: ltr;
+    }
+
+    .excerpt-preview-pane {
+      padding: 20px;
+      background-color: var(--bg-slate);
+      color: var(--ink-on-slate);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .excerpt-lead-copy {
+      font-size: 0.90rem;
+      color: var(--ink-muted-slate);
+      margin-bottom: 12px;
+    }
+
+    .excerpt-tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .excerpt-tab-btn {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 7px 10px;
+      border: 1px solid #343E54;
+      background-color: var(--bg-slate-raised);
+      color: var(--ink-muted-slate);
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    .excerpt-tab-btn.active {
+      background-color: var(--accent-amber);
+      color: var(--ink-primary);
+      font-weight: 700;
+      border-color: var(--accent-amber);
+    }
+
+    .code-specimen-box {
+      font-family: var(--font-mono);
+      font-size: 0.80rem;
+      line-height: 1.55;
+      background-color: #0B0E14;
+      border: 1px solid #2A3244;
+      padding: 14px;
+      color: #E2E8F0;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      direction: ltr;
+      text-align: left;
+    }
+
+    /* SECTION 4: 3 STARTER CODEBASES */
+    .codebases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .codebase-card {
+      padding: 20px;
+      border-left: 1px solid var(--rule-hairline);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .codebase-card:last-child {
+      border-left: none;
+    }
+
+    .codebase-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.18rem;
+      color: var(--ink-primary);
+    }
+
+    .repo-path-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--accent-teal);
+      background-color: var(--accent-teal-soft);
+      padding: 4px 8px;
+      border: 1px solid rgba(11, 97, 90, 0.25);
+      margin-bottom: 6px;
+      direction: ltr;
+    }
+
+    .codebase-card p {
+      font-size: 0.90rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+    }
+
+    .stack-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      list-style: none;
+      direction: ltr;
+    }
+
+    .stack-tags li {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      background-color: var(--bg-ledger);
+      border: 1px solid var(--rule-hairline);
+      color: var(--ink-secondary);
+    }
+
+    /* SECTION 5: ALGERIAN MARKET EXCLUSIVE CHECKOUT TERMINAL */
+    .checkout-dz-box {
+      padding: 32px 36px;
+      background-color: var(--bg-elevated);
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .checkout-summary-col {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .checkout-pricing-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--rule-hairline);
+      padding-bottom: 14px;
+    }
+
+    .checkout-pricing-header h3 {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      color: var(--ink-primary);
+    }
+
+    .checkout-price-display {
+      font-family: var(--font-display);
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--accent-amber-ink);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .deliverables-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--ink-secondary);
+    }
+
+    .deliverables-checklist li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .checkout-action-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 24px;
+      background-color: var(--bg-stock);
+      border: 1px solid var(--rule-hairline);
+      border-radius: 4px;
+    }
+
+    .rip-copy-box {
+      padding: 12px;
+      background-color: var(--bg-elevated);
+      border: 1px solid var(--rule-hairline);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .rip-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      direction: ltr;
+    }
+
+    .btn-copy-rip {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      background-color: var(--bg-slate);
+      color: var(--ink-on-slate);
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .btn-copy-rip:hover {
+      background-color: var(--accent-amber);
+      color: var(--ink-primary);
+    }
+
+    .wa-step-label {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--ink-secondary);
+      margin-bottom: 6px;
+    }
+
+    .wa-input-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .dossier-input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--rule-hairline);
+      background-color: var(--bg-elevated);
+      color: var(--ink-primary);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+    }
+
+    .btn-checkout-big {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.02rem;
+      transition: background-color 150ms ease, transform 120ms ease;
+      cursor: pointer;
+      border: 1px solid rgba(18, 22, 31, 0.25);
+      background-color: var(--accent-amber);
+      color: var(--ink-primary);
+      font-family: var(--font-sans);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .btn-checkout-big:hover {
+      background-color: var(--accent-amber-hover);
+      transform: translateY(-1px);
+    }
+
+    .terminal-footnote {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    /* FOOTER */
+    .dossier-footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 2px solid var(--rule-heavy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      color: var(--ink-secondary);
+    }
+
+    .dossier-footer a {
+      color: var(--ink-primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width: 1120px) {
+      .ledger-col-headers {
+        display: none;
+      }
+      .ledger-main-grid {
+        grid-template-columns: 1fr;
+      }
+      .ledger-headline-cell,
+      .ledger-stamp-cell {
+        border-left: none;
+        border-bottom: 1px solid var(--rule-hairline);
+      }
+      .inspection-cards-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .inspector-workbench,
+      .roi-split-grid,
+      .curriculum-grid,
+      .codebases-grid,
+      .checkout-dz-box {
+        grid-template-columns: 1fr;
+      }
+      .inspector-screen-pane,
+      .roi-comparison-pane,
+      .chapters-list-pane,
+      .codebase-card {
+        border-left: none;
+        border-bottom: 1px solid var(--rule-hairline);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .nav-links {
+        display: none;
+      }
+      .inspection-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .calc-output-grid,
+      .wa-input-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP NAVIGATION BAR -->
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      <a href="https://instagram.com/mkill_9" target="_blank" rel="noopener" class="brand-id">
+        <span class="brand-monogram">MK</span>
+        <span>@mkill_9</span>
+      </a>
+
+      <nav aria-label="أقسام الدليل الهندسي">
+        <ul class="nav-links">
+          <li><a href="#inspection-strip">7 مشاريع حقيقية</a></li>
+          <li class="nav-sep">|</li>
+          <li><a href="#curriculum">فهرس الكتاب (406 صفحة)</a></li>
+          <li class="nav-sep">|</li>
+          <li><a href="#codebases">3 أنظمة برمجية جاهزة</a></li>
+          <li class="nav-sep">|</li>
+          <li><a href="#roi-ledger">حاسبة الأرباح</a></li>
+          <li class="nav-sep">|</li>
+          <li><a href="#checkout">الطلب الفوري (1,990 دج)</a></li>
+        </ul>
+      </nav>
+
+      <a href="#checkout" class="top-buy-pill">
+        <span>اطلب الكتاب — 1,990 دج</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="dossier-wrapper">
+    <div class="sheet-index-bar">
+      <span>السجل الهندسي والتجاري لبناء وبيع الأنظمة الرقمية بوكلاء الذكاء الاصطناعي</span>
+      <span class="tabular">DOC REF: AI-AG-406-DZ // @MKILL_9</span>
+    </div>
+
+    <!-- FIRST VIEWPORT PART 1: TOP LEDGER HEADER -->
+    <section class="top-ledger-box" aria-label="مواصفات الكتاب والطلب المباشر">
+      <div class="ledger-col-headers">
+        <div>الدليل التطبيقي لبناء المواقع والأنظمة الطبية والتجارية</div>
+        <div>مواصفات المرجع</div>
+        <div>بوابة الطلب والاستلام الفوري في الجزائر</div>
+      </div>
+
+      <div class="ledger-main-grid">
+        <div class="ledger-headline-cell">
+          <h1>اصنع مواقع عالمية لشركات عالمية وأجنبية بآلاف الدولارات مع وكلاء الذكاء الاصطناعي</h1>
+          <p>
+            كل هذا وأكثر في هذا الكتاب القيّم (<strong>406 صفحة</strong> + <strong>219 كود مصدري</strong> + <strong>3 مشاريع كاملة جاهزة للتشغيل</strong>). تعلّم نفس المنظومة التي يعتمدها <strong>@mkill_9</strong> لبناء وبيع مواقع العيادات، مخابر التحاليل، المطاعم، ومنصات الشركات في الجزائر بـ <strong>15 إلى 45 مليون سنتيم</strong>.
+          </p>
+        </div>
+
+        <div class="ledger-stamp-cell">
+          <div class="verification-stamp" aria-label="ختم 406 صفحة">
+            <span class="stamp-code">SPEC VERIFIED</span>
+            <span class="stamp-number">406</span>
+            <span class="stamp-sub">صفحة هندسية<br />شاملة</span>
+          </div>
+        </div>
+
+        <div class="ledger-checkout-cell">
+          <a href="#checkout" class="btn-checkout-baridimob">
+            <span class="btn-label-group">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>اطلب الآن عبر BaridiMob — 1,990 دج</span>
+            </span>
+            <span class="btn-price-pill">199 ألف سنتيم</span>
+          </a>
+
+          <div class="checkout-guarantee-note">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>تحويل مباشر 0% عمولة • إرسال فوري للكتاب والمشاريع</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIRST VIEWPORT PART 2: 7-CARD INDEXED INSPECTION STRIP -->
+    <section class="inspection-strip-box" id="inspection-strip" aria-label="شريط معاينة 7 مشاريع حقيقية">
+      <div class="strip-header-bar">
+        <h2>شريط الفحص الميداني: 7 مواقع وأنظمة حقيقية لعملاء فعليين بُنيت بنفس منهجية الكتاب</h2>
+        <span class="strip-header-meta">اضغط على أي بطاقة (FIG.01 إلى FIG.07) لمعاينة تفاصيل المشروع وسعر البيع</span>
+      </div>
+
+      <div class="inspection-cards-grid" role="list">
+        <!-- Card 1 -->
+        <button type="button" class="client-plate-card active" data-index="0" role="listitem">
+          <div class="plate-pin-bar">
+            <span class="pin-coord"><span class="pin-dot"></span>FIG.01</span>
+            <span class="deal-tag">28M CENTIMES</span>
+          </div>
+          <div class="plate-thumb-wrap">
+            <img src="assets/sc/sc-01-el-hayat.png" alt="منصة مجمع الحياة الطبي وطب الأسنان" loading="eager" />
+          </div>
+          <div class="plate-caption">
+            <span class="plate-title">مجمع الحياة الطبي EL-HAYAT</span>
+            <span class="plate-sub">بوابة عيادة وطب أسنان</span>
+          </div>
+        </button>
+
+        <!-- Card 2 -->
+        <button type="button" class="client-plate-card" data-index="1" role="listitem">
+          <div class="plate-pin-bar">
+            <span class="pin-coord"><span class="pin-dot"></span>FIG.02</span>
+            <span class="deal-tag">22M CENTIMES</span>
+          </div>
+          <div class="plate-thumb-wrap">
+            <img src="assets/sc/sc-02-lab-calc.png" alt="حاسبة تحاليل مخبر الحياة التفاعلية 2900 دج" loading="eager" />
+          </div>
+          <div class="plate-caption">
+            <span class="plate-title">حاسبة مخبر التحاليل الطبية</span>
+            <span class="plate-sub">تسعير فوري للتحاليل (2900 دج)</span>
+          </div>
+        </button>
+
+        <!-- Card 3 -->
+        <button type="button" class="client-plate-card" data-index="2" role="listitem">
+          <div class="plate-pin-bar">
+            <span class="pin-coord"><span class="pin-dot"></span>FIG.03</span>
+            <span class="deal-tag">25M CENTIMES</span>
+          </div>
+          <div class="plate-thumb-wrap">
+            <img src="assets/sc/sc-03-rouibah-clinic.png" alt="عيادة رويبح الطبية 24/7 برج منايل" loading="eager" />
+          </div>
+          <div class="plate-caption">
+            <span class="plate-title">عيادة رويبح الطبية 24/7</span>
+            <span class="plate-sub">منصة استعجالات وعيادة متعددة</span>
+          </div>
+        </button>
+
+        <!-- Card 4 -->
+        <button type="button" class="client-plate-card" data-index="3" role="listitem">
+          <div class="plate-pin-bar">
+            <span class="pin-coord"><span class="pin-dot"></span>FIG.04</span>
+            <span class="deal-tag">16M CENTIMES</span>
+          </div>
+          <div class="plate-thumb-wrap">
+            <img src="assets/sc/sc-04-crikx-burger.png" alt="مطعم Crikx Burger & Crêpe القبة الجزائر" loading="eager" />
+          </div>
+          <div class="plate-caption">
+            <span class="plate-title">مطعم Crikx Burger</span>
+            <span class="plate-sub">منصة طلبات مباشرة (القبة)</span>
+          </div>
+        </button>
+
+        <!-- Card 5 -->
+        <button type="button" class="client-plate-card" data-index="4" role="listitem">
+          <div class="plate-pin-bar">
+            <span class="pin-coord"><span class="pin-dot"></span>FIG.05</span>
+            <span class="deal-tag">22M CENTIMES</span>
+          </div>
+          <div class="plate-thumb-wrap">
+            <img src="assets/sc/sc-05-la-ostra.png" alt="مطعم La Ostra الفاخر وحجز الطاولات" loading="eager" />
+          </div>
+          <div class="plate-caption">
+            <span class="plate-title">مطعم La Ostra الفاخر</span>
+            <span class="plate-sub">حجز طاولات وقائمة تفاعلية</span>
+          </div>
+        </button>
+
+        <!-- Card 6 -->
+        <button type="button" class="client-plate-card" data-index="5" role="listitem">
+          <div class="plate-pin-bar">
+            <span class="pin-coord"><span class="pin-dot"></span>FIG.06</span>
+            <span class="deal-tag">18M CENTIMES</span>
+          </div>
+          <div class="plate-thumb-wrap">
+            <img src="assets/sc/sc-06-maestro-pizzeria.png" alt="منصة Maestro Pizzeria Restaurant Cafeteria" loading="eager" />
+          </div>
+          <div class="plate-caption">
+            <span class="plate-title">منصة Maestro Pizzeria</span>
+            <span class="plate-sub">مطعم وبيتزيريا وكافيتيريا</span>
+          </div>
+        </button>
+
+        <!-- Card 7 -->
+        <button type="button" class="client-plate-card" data-index="6" role="listitem">
+          <div class="plate-pin-bar">
+            <span class="pin-coord"><span class="pin-dot"></span>FIG.07</span>
+            <span class="deal-tag">35M CENTIMES</span>
+          </div>
+          <div class="plate-thumb-wrap">
+            <img src="assets/sc/sc-07-solosolution-auto.png" alt="منصة SoloSolution Auto Parts لقطع غيار السيارات" loading="eager" />
+          </div>
+          <div class="plate-caption">
+            <span class="plate-title">منصة SoloSolution Auto</span>
+            <span class="plate-sub">كتالوج B2B لقطع الغيار</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="strip-summary-footer">
+        <p>
+          احصل فوراً على <strong>الكتاب الهندسي الكامل (406 صفحة)</strong> + <strong>3 مشاريع برمجية كاملة</strong> + <strong>عقود وسكريبتات إقناع العملاء</strong> بـ <strong>1,990 دج فقط عبر BaridiMob</strong>.
+        </p>
+        <span class="inspect-hint-badge" id="active-plate-indicator">INSPECTING: FIG.01 // GROUPE MÉDICAL EL-HAYAT</span>
+      </div>
+
+      <!-- INTERACTIVE CASE STUDY INSPECTOR WORKBENCH -->
+      <div class="inspector-workbench" aria-live="polite">
+        <div class="inspector-screen-pane">
+          <div class="inspector-Viewport-bar">
+            <span id="inspector-fig-code">PLATE VIEWPORT // FIG.01: GROUPE MÉDICAL EL-HAYAT</span>
+            <span id="inspector-delivery-time">BUILD TIME: 5 DAYS WITH AI AGENTS</span>
+          </div>
+          <div class="inspector-frame">
+            <img id="inspector-main-img" src="assets/sc/sc-01-el-hayat.png" alt="معاينة المشروع المختار بدقة عالية" />
+          </div>
+        </div>
+
+        <div class="inspector-spec-pane">
+          <div>
+            <h3 id="inspector-title">مجمع الحياة الطبي (Groupe Médical EL-HAYAT): بوابة عيادة وطب أسنان</h3>
+            <table class="spec-kv-table" style="margin-top: 10px;">
+              <tbody>
+                <tr>
+                  <th>قطاع العميل</th>
+                  <td id="inspector-sector">العيادات الخاصة وجراحة الأسنان</td>
+                </tr>
+                <tr>
+                  <th>سعر بيع المشروع في السوق الجزائري</th>
+                  <td id="inspector-dzd">25 إلى 40 مليون سنتيم (250,000 إلى 400,000 دج)</td>
+                </tr>
+                <tr>
+                  <th>الفصل المستخدم من الكتاب</th>
+                  <td id="inspector-chapter">الفصل 8 (نظام Apex) + الفصل 13 (سكريبت إقناع العيادات)</td>
+                </tr>
+                <tr>
+                  <th>الميزة البيعية الحاسمة</th>
+                  <td id="inspector-feature">توجيه المريض حسب التخصص (عربي/فرنسي) + حجز فوري عبر واتساب</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="inspector-pitch-note" id="inspector-pitch">
+            <strong>كيف تغلق هذه الصفقة (الفصل 13):</strong> العيادات الخاصة تضيع عشرات المرضى يومياً بسبب انشغال الهاتف. عندما تعرض على الطبيب موقعاً جاهزاً يعمل أمامه على الهاتف مع حاسبة تحاليل وحجز فوري، فإنك تغلق صفقة بـ 25 مليون سنتيم أو أكثر في جلسة واحدة.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE DEAL MATH & INTERACTIVE ROI CALCULATOR -->
+    <section class="dossier-section" id="roi-ledger" aria-label="حساب العائد على الاستثمار">
+      <div class="section-ledger-bar">
+        <h2>01 // معادلة الربح: صفقة عميل واحد في الجزائر مقابل سعر الكتاب (1,990 دج فقط)</h2>
+        <span class="section-code-tag">100x+ ROI ON FIRST CLIENT</span>
+      </div>
+
+      <div class="roi-split-grid">
+        <div class="roi-comparison-pane">
+          <h3>لماذا يتفوق مهندس وكلاء الذكاء الاصطناعي على المبرمج التقليدي؟</h3>
+          <table class="comparison-ledger-table">
+            <thead>
+              <tr>
+                <th>معيار المقارنة</th>
+                <th>البرمجة اليدوية التقليدية</th>
+                <th>الدورات النظرية العامة</th>
+                <th class="highlight-col">دليل BUILD WITH AI AGENTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>مدة إنجاز موقع عميل كامل</strong></td>
+                <td>5 إلى 8 أسابيع</td>
+                <td>شرح نظري فقط</td>
+                <td class="highlight-col">4 إلى 7 أيام (منهجية الـ 6 مراحل)</td>
+              </tr>
+              <tr>
+                <td><strong>مشاريع جاهزة للتعديل والبيع</strong></td>
+                <td>تبدأ من الصفر دائماً</td>
+                <td>غير متوفرة</td>
+                <td class="highlight-col">3 أنظمة برمجية كاملة مرفقة</td>
+              </tr>
+              <tr>
+                <td><strong>أكواد جاهزة للنسخ والتشغيل</strong></td>
+                <td>بحث عشوائي</td>
+                <td>أمثلة ناقصة</td>
+                <td class="highlight-col">219 كود برمجي مفحوص بالكامل</td>
+              </tr>
+              <tr>
+                <td><strong>عقود قانونية وسكريبتات مبيعات</strong></td>
+                <td>اجتهاد شخصي</td>
+                <td>غير متوفرة</td>
+                <td class="highlight-col">دليل مبيعات ميداني + عقد رسمي</td>
+              </tr>
+              <tr>
+                <td><strong>تكلفة الاستثمار</strong></td>
+                <td>أشهر من التجربة</td>
+                <td>ملايين السنتيمات</td>
+                <td class="highlight-col">1,990 دج فقط (199 ألف سنتيم)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="roi-calculator-pane">
+          <div>
+            <h3>حاسبة أرباحك في السوق الجزائري (بالسنتيم والدينار)</h3>
+            <p class="calc-lead-copy">
+              حرّك المؤشرات لحساب دخلك الشهري عند تطبيق خطة المبيعات في الفصل 12 والفصل 13:
+            </p>
+
+            <div class="calc-control-group" style="margin-bottom: 12px;">
+              <label for="calc-sites">
+                <span>عدد المواقع المنفذة شهرياً</span>
+                <span id="calc-sites-lbl">2 مواقع / شهر</span>
+              </label>
+              <input type="range" id="calc-sites" class="calc-range" min="1" max="6" step="1" value="2" />
+            </div>
+
+            <div class="calc-control-group">
+              <label for="calc-price">
+                <span>متوسط سعر الموقع للعميل في الجزائر (بالمليون سنتيم)</span>
+                <span id="calc-price-lbl">22 مليون سنتيم</span>
+              </label>
+              <input type="range" id="calc-price" class="calc-range" min="10" max="50" step="2" value="22" />
+            </div>
+          </div>
+
+          <div class="calc-output-grid">
+            <div class="calc-metric-box">
+              <div class="calc-metric-val" id="out-monthly-dzd">44M Centimes</div>
+              <div class="calc-metric-lbl">الدخل الشهري (سنتيم)</div>
+            </div>
+            <div class="calc-metric-box">
+              <div class="calc-metric-val" id="out-annual-dzd">528M Centimes</div>
+              <div class="calc-metric-lbl">الدخل السنوي المتوقع</div>
+            </div>
+            <div class="calc-metric-box">
+              <div class="calc-metric-val" id="out-roi-mult">221x ROI</div>
+              <div class="calc-metric-lbl">مضاعف ربحك مقارنة بـ 1,990 دج</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: COMPLETE 406-PAGE CURRICULUM -->
+    <section class="dossier-section" id="curriculum" aria-label="فهرس الكتاب الكامل">
+      <div class="section-ledger-bar">
+        <h2>02 // الفهرس الهندسي الكامل للكتاب (406 صفحة • 13 فصلاً + 3 ملاحق عملية)</h2>
+        <span class="section-code-tag">219 CODE LISTINGS</span>
+      </div>
+
+      <div class="curriculum-grid">
+        <div class="chapters-list-pane">
+          <div class="part-block">
+            <div class="part-header">
+              <span>الجزء الأول: أسس الهندسة بوكلاء الذكاء الاصطناعي</span>
+              <span class="tabular">PP. 1-94</span>
+            </div>
+            <ul class="chapter-rows">
+              <li><span><span class="ch-num">CH.01</span>التحول الجذري: من الإكمال التلقائي إلى الوكيل المستقل</span><span class="ch-pages">pp. 1-31</span></li>
+              <li><span><span class="ch-num">CH.02</span>كيف يفكر الوكيل البرمجي: هندسة السياق والأدوات</span><span class="ch-pages">pp. 32-61</span></li>
+              <li><span><span class="ch-num">CH.03</span>دورة التطوير ذات الـ 6 مراحل وكتابة المواصفات الدقيقة</span><span class="ch-pages">pp. 62-94</span></li>
+            </ul>
+          </div>
+
+          <div class="part-block">
+            <div class="part-header">
+              <span>الجزء الثاني: إتقان البنية البرمجية الكاملة (Full-Stack)</span>
+              <span class="tabular">PP. 95-198</span>
+            </div>
+            <ul class="chapter-rows">
+              <li><span><span class="ch-num">CH.04</span>هندسة الواجهات الأمامية الفاخرة وأنظمة التصميم</span><span class="ch-pages">pp. 95-129</span></li>
+              <li><span><span class="ch-num">CH.05</span>إدارة الحالة التفاعلية، الحاسبات الديناميكية وTypeScript</span><span class="ch-pages">pp. 130-164</span></li>
+              <li><span><span class="ch-num">CH.06</span>بناء الخوادم، قواعد بيانات PostgreSQL، والتوثيق الأمني JWT</span><span class="ch-pages">pp. 165-198</span></li>
+            </ul>
+          </div>
+
+          <div class="part-block">
+            <div class="part-header">
+              <span>الجزء الثالث: بناء 3 مشاريع إنتاجية كاملة خطوة بخطوة</span>
+              <span class="tabular">PP. 199-312</span>
+            </div>
+            <ul class="chapter-rows">
+              <li><span><span class="ch-num">CH.07</span>المشروع 1: منصة DevPulse لعرض أعمال الوكالة واستقطاب العملاء</span><span class="ch-pages">pp. 199-234</span></li>
+              <li><span><span class="ch-num">CH.08</span>المشروع 2: بوابة Apex للعيادات والشركات مع حاسبة الأسعار</span><span class="ch-pages">pp. 235-272</span></li>
+              <li><span><span class="ch-num">CH.09</span>المشروع 3: نظام TaskFlow Pro المتكامل (Node + Postgres + Docker)</span><span class="ch-pages">pp. 273-312</span></li>
+            </ul>
+          </div>
+
+          <div class="part-block">
+            <div class="part-header">
+              <span>الجزء الرابع: إدارة الأعمال وإغلاق الصفقات في الجزائر والخارج</span>
+              <span class="tabular">PP. 313-406</span>
+            </div>
+            <ul class="chapter-rows">
+              <li><span><span class="ch-num">CH.10</span>الاختبار الآلي، اكتشاف الأخطاء، وتأمين الكود</span><span class="ch-pages">pp. 313-334</span></li>
+              <li><span><span class="ch-num">CH.11</span>النشر السحابي المجاني، Docker، CI/CD وربط النطاقات</span><span class="ch-pages">pp. 335-354</span></li>
+              <li><span><span class="ch-num">CH.12</span>نماذج الربح: العمل الحر، عقود الصيانة الشهرية، وSaaS</span><span class="ch-pages">pp. 355-372</span></li>
+              <li><span><span class="ch-num">CH.13</span>دليل المبيعات الميداني: كيف تبيع للشركات والعيادات بـ 15 إلى 45 مليون</span><span class="ch-pages">pp. 373-388</span></li>
+              <li><span><span class="ch-num">APP.A-C</span>مكتبة الأوامر (15 Briefs) + مقارنة التقنيات + 5 قوائم فحص</span><span class="ch-pages">pp. 389-406</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="excerpt-preview-pane">
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 8px;">
+              تصفّح مقتطفات حقيقية من داخل الكتاب
+            </h3>
+            <p class="excerpt-lead-copy">
+              اختر أحد النماذج أدناه لمعاينة أوامر الوكلاء (Prompts)، كود حاسبة التحاليل الطبية، وسكريبت إقناع العيادات والشركات:
+            </p>
+            <div class="excerpt-tabs" role="tablist">
+              <button type="button" class="excerpt-tab-btn active" data-specimen="brief">1. أمر هندسة بوابة طبية (Ch. 3)</button>
+              <button type="button" class="excerpt-tab-btn" data-specimen="sql">2. محرك حاسبة التحاليل 2900 دج (Ch. 8)</button>
+              <button type="button" class="excerpt-tab-btn" data-specimen="sales">3. سكريبت إغلاق صفقة عيادة (Ch. 13)</button>
+            </div>
+          </div>
+
+          <pre class="code-specimen-box" id="specimen-output">## AGENT SPECIFICATION BRIEF (STAGE 2: ARCHITECTURE)
+PROJECT: Groupe Médical EL-HAYAT Bilingual Portal + Lab Calculator
+TARGET STACK: Semantic HTML5, CSS Grid Tokens, Vanilla ES2024 Module
+
+CONSTRAINTS &amp; ACCEPTANCE CRITERIA:
+1. Zero external UI runtime dependencies; First Contentful Paint &lt; 0.8s.
+2. Interactive Diagnostic Lab Calculator:
+   - Real-time DZD total calculation across 24 blood &amp; imaging panels
+   - 1-click WhatsApp pre-filled appointment &amp; prescription upload link
+3. Bilingual RTL/LTR switch (Arabic &amp; French) with tabular numerals.</pre>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 0.76rem; color: #5EEAD4; direction: ltr;">
+            <span>INCLUDED IN: Build_With_AI_Agents_406p.pdf</span>
+            <span>+ 15 READY-TO-RUN .MD AGENT BRIEFS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE 3 PRODUCTION STARTER CODEBASES -->
+    <section class="dossier-section" id="codebases" aria-label="المشاريع البرمجية الثلاثة المرفقة">
+      <div class="section-ledger-bar">
+        <h2>03 // 3 مشاريع برمجية كاملة جاهزة للتعديل والبيع فوراً للعملاء</h2>
+        <span class="section-code-tag">COMMERCIAL LICENSE INCLUDED</span>
+      </div>
+
+      <div class="codebases-grid">
+        <div class="codebase-card">
+          <div>
+            <span class="repo-path-badge">starter-codebases/01-devpulse-portfolio/</span>
+            <h3>نظام DevPulse لعرض أعمالك واستقطاب العملاء</h3>
+            <p style="margin-top: 6px;">
+              واجهة وكالة رقمية فاخرة جاهزة للنشر في أقل من ساعتين، تضم بطاقات دراسة الحالة، مؤشرات الأداء، ونموذج حجز استشارة مباشرة مع العملاء.
+            </p>
+          </div>
+          <ul class="stack-tags">
+            <li>HTML5 / CSS Tokens</li>
+            <li>Interactive Case Filter</li>
+            <li>99+ Lighthouse Score</li>
+          </ul>
+        </div>
+
+        <div class="codebase-card">
+          <div>
+            <span class="repo-path-badge">starter-codebases/02-apex-business-site/</span>
+            <h3>نظام Apex للعيادات والمخابر والشركات</h3>
+            <p style="margin-top: 6px;">
+              البنية الهندسية التي بُنيت عليها مشاريع العيادات ومخابر التحاليل والمطاعم، مزودة بحاسبة أسعار تفاعلية وربط مباشر مع واتساب الاستقبال.
+            </p>
+          </div>
+          <ul class="stack-tags">
+            <li>Interactive Pricing Engine</li>
+            <li>WhatsApp Lead Router</li>
+            <li>Multi-Niche Ready</li>
+          </ul>
+        </div>
+
+        <div class="codebase-card">
+          <div>
+            <span class="repo-path-badge">starter-codebases/03-taskflow-fullstack/</span>
+            <h3>نظام TaskFlow Pro المتكامل (SaaS &amp; B2B)</h3>
+            <p style="margin-top: 6px;">
+              تطبيق ويب إنتاجي متكامل يضم واجهة خلفية بـ Node.js وExpress، قاعدة بيانات PostgreSQL، نظام صلاحيات وتوثيق JWT، وحاويات Docker جاهزة.
+            </p>
+          </div>
+          <ul class="stack-tags">
+            <li>Node.js + Express</li>
+            <li>PostgreSQL + JWT</li>
+            <li>Docker Compose</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: ALGERIAN MARKET EXCLUSIVE CHECKOUT TERMINAL -->
+    <section class="dossier-section" id="checkout" aria-label="بوابة الدفع والاستلام الفوري في الجزائر">
+      <div class="section-ledger-bar">
+        <h2>04 // احصل على الحزمة الكاملة الآن — الدفع بالدينار الجزائري (1,990 دج)</h2>
+        <span class="section-code-tag">BARIDIMOB / CCP / WHATSAPP</span>
+      </div>
+
+      <div class="checkout-dz-box">
+        <div class="checkout-summary-col">
+          <div class="checkout-pricing-header">
+            <div>
+              <h3>حزمة BUILD WITH AI AGENTS الهندسية الكاملة</h3>
+              <p style="font-size: 0.88rem; color: var(--ink-muted); margin-top: 2px;">
+                دفع لمرة واحدة • وصول دائم للكتاب والمشاريع الثلاثة مع التحديثات
+              </p>
+            </div>
+            <div class="checkout-price-display">1,990 دج</div>
+          </div>
+
+          <ul class="deliverables-checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>الكتاب الكامل (406 صفحة)</strong> بصيغة PDF عالية الدقة + نسخة HTML التفاعلية</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>المشاريع البرمجية الـ 3 الكاملة</strong> (DevPulse + Apex + TaskFlow Pro)</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>15 قالب أوامر هندسية (.md)</strong> جاهزة للنسخ + 5 قوائم فحص إنتاجية</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>دليل المبيعات الميداني والعقود</strong> لإغلاق صفقات بـ 15 إلى 45 مليون سنتيم</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="checkout-action-col">
+          <div class="rip-copy-box">
+            <div class="rip-row">
+              <span><strong>RIP BARIDIMOB:</strong> <code id="rip-number">00799999004293908906</code></span>
+              <button type="button" class="btn-copy-rip" id="copy-rip-btn">نسخ رقم RIP</button>
+            </div>
+            <div class="rip-row" style="color: var(--ink-secondary); font-size: 0.78rem;">
+              <span>المبلغ: <strong>1,990 دج</strong> (199 ألف سنتيم)</span>
+              <span>الحساب: <strong>@mkill_9</strong></span>
+            </div>
+          </div>
+
+          <div>
+            <p class="wa-step-label">
+              الخطوة 2: أدخل اسمك وإيميلك لتأكيد الطلب عبر واتساب واستلام الحزمة فوراً:
+            </p>
+            <div class="wa-input-row">
+              <input type="text" id="wa-buyer-name" class="dossier-input" placeholder="الاسم الكامل" />
+              <input type="email" id="wa-buyer-email" class="dossier-input" placeholder="الإيميل لاستلام الملفات" />
+            </div>
+          </div>
+
+          <button type="button" id="send-wa-order-btn" class="btn-checkout-big">
+            <span class="btn-label-group">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>تأكيد الطلب وإرسال الوصل عبر واتساب (1,990 دج)</span>
+            </span>
+            <span class="btn-price-pill">استلام فوري</span>
+          </button>
+
+          <p class="terminal-footnote">
+            تحويل مباشر بالدينار الجزائري مع إرسال الملفات فوراً عبر واتساب (+213 555 95 45 69) أو إيميل • يمكنك أيضاً إرسال صورة الوصل مباشرة إلى حساب الإنستغرام <a href="https://instagram.com/mkill_9" target="_blank" rel="noopener" style="color: var(--accent-amber-ink); font-weight: 700;">@mkill_9</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="dossier-footer">
+      <div>
+        <strong>BUILD WITH AI AGENTS</strong> • الدليل الهندسي الشامل (406 صفحة) • إعداد وتطوير <a href="https://instagram.com/mkill_9" target="_blank" rel="noopener">@mkill_9</a>
+      </div>
+      <div>
+        <a href="#checkout">الطلب عبر BaridiMob (1,990 دج)</a> &nbsp;|&nbsp; <a href="https://wa.me/213555954569" target="_blank" rel="noopener">واتساب: 0555 95 45 69</a> &nbsp;|&nbsp; <a href="https://instagram.com/mkill_9" target="_blank" rel="noopener">إنستغرام @mkill_9</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const SELLER_CONFIG = {
+      whatsappPhone: "213555954569",
+      baridimobRip: "00799999004293908906",
+      instagramUrl: "https://instagram.com/mkill_9"
+    };
+
+    const CLIENT_BUILDS_AR = [
+      {
+        fig: "FIG.01",
+        title: "مجمع الحياة الطبي (Groupe Médical EL-HAYAT): بوابة عيادة وطب أسنان",
+        sector: "العيادات الخاصة وجراحة الأسنان",
+        dzd: "25 إلى 40 مليون سنتيم (250,000 إلى 400,000 دج)",
+        delivery: "BUILD TIME: 5 DAYS WITH AI AGENTS",
+        chapter: "الفصل 8 (نظام Apex) + الفصل 13 (سكريبت إقناع العيادات)",
+        feature: "توجيه المريض حسب التخصص (عربي/فرنسي) + حجز فوري عبر واتساب",
+        img: "assets/sc/sc-01-el-hayat.png",
+        pitch: "كيف تغلق هذه الصفقة (الفصل 13): العيادات الخاصة تضيع عشرات المرضى يومياً بسبب انشغال الهاتف. عندما تعرض على الطبيب موقعاً جاهزاً يعمل أمامه على الهاتف مع حاسبة تحاليل وحجز فوري، فإنك تغلق صفقة بـ 25 مليون سنتيم أو أكثر في جلسة واحدة."
+      },
+      {
+        fig: "FIG.02",
+        title: "حاسبة مخبر التحاليل الطبية التفاعلية (EL-HAYAT Lab Calculator)",
+        sector: "مخابر التحاليل الطبية والتشخيص",
+        dzd: "22 إلى 35 مليون سنتيم (220,000 إلى 350,000 دج)",
+        delivery: "BUILD TIME: 4 DAYS WITH AI AGENTS",
+        chapter: "الفصل 5 (الحالة التفاعلية) + الفصل 8 (محرك التسعير)",
+        feature: "حساب فوري لتكلفة التحاليل (2,900 دج) + طلب سحب الدم من المنزل",
+        img: "assets/sc/sc-02-lab-calc.png",
+        pitch: "كيف تغلق هذه الصفقة (الفصل 8): السؤال الأول لكل مريض هو 'كم تكلفة التحاليل؟'. هذه الحاسبة التفاعلية تحول موقع المخبر إلى موظف استقبال ذكي يعمل 24/7."
+      },
+      {
+        fig: "FIG.03",
+        title: "عيادة رويبح الطبية 24/7 (Rouibah Medical: برج منايل، بومرداس)",
+        sector: "الاستعجالات الطبية والعيادات المتعددة الاختصاصات",
+        dzd: "24 إلى 38 مليون سنتيم (240,000 إلى 380,000 دج)",
+        delivery: "BUILD TIME: 5 DAYS WITH AI AGENTS",
+        chapter: "الفصل 4 (واجهات المستخدم) + الفصل 13 (العرض الميداني)",
+        feature: "شريط استعجالات 24/7، جدول الأطباء المناوبين، وتحديد الموقع GPS",
+        img: "assets/sc/sc-03-rouibah-clinic.png",
+        pitch: "كيف تغلق هذه الصفقة (الفصل 13): العيادات الكبرى تبحث عن الهيبة والثقة الفورية. الموقع ثنائي اللغة يمنح العيادة حضوراً رقمياً بمستوى المستشفيات العالمية."
+      },
+      {
+        fig: "FIG.04",
+        title: "مطعم Crikx Burger & Crêpe: منصة طلبات مباشرة (القبة، الجزائر)",
+        sector: "المطاعم العصرية والعلامات التجارية الغذائية",
+        dzd: "15 إلى 22 مليون سنتيم (150,000 إلى 220,000 دج)",
+        delivery: "BUILD TIME: 3 DAYS WITH AI AGENTS",
+        chapter: "الفصل 4 (الهوية البصرية) + الفصل 5 (سلة الطلبات)",
+        feature: "قائمة رقمية سريعة + إرسال الطلب مباشرة إلى واتساب المطبخ بدون عمولة",
+        img: "assets/sc/sc-04-crikx-burger.png",
+        pitch: "كيف تغلق هذه الصفقة (الفصل 13): المطاعم تخسر 15% إلى 30% في تطبيقات التوصيل. اعرض على صاحب المطعم امتلاك منصته الخاصة واسترجاع تكلفتها خلال شهر واحد."
+      },
+      {
+        fig: "FIG.05",
+        title: "مطعم La Ostra: بوابة المطاعم الفاخرة وحجز الطاولات",
+        sector: "المطاعم الراقية والضيافة الفاخرة",
+        dzd: "20 إلى 32 مليون سنتيم (200,000 إلى 320,000 دج)",
+        delivery: "BUILD TIME: 4 DAYS WITH AI AGENTS",
+        chapter: "الفصل 4 (التصميم الفاخر) + الفصل 8 (نظام الحجز)",
+        feature: "عرض أطباق البحر الفاخرة + نظام حجز طاولات VIP مباشر",
+        img: "assets/sc/sc-05-la-ostra.png",
+        pitch: "كيف تغلق هذه الصفقة (الفصل 13): المطاعم الراقية تبيع التجربة والفخامة قبل وصول الزبون، وهذا التصميم يمنحها واجهة تضاهي مطاعم دبي وباريس."
+      },
+      {
+        fig: "FIG.06",
+        title: "منصة Maestro Pizzeria • Restaurant • Cafeteria",
+        sector: "المجمعات الغذائية والمطاعم متعددة الأقسام",
+        dzd: "16 إلى 25 مليون سنتيم (160,000 إلى 250,000 دج)",
+        delivery: "BUILD TIME: 4 DAYS WITH AI AGENTS",
+        chapter: "الفصل 5 (فلترة الأقسام) + الفصل 11 (الاستضافة السحابية)",
+        feature: "تبديل فوري بين قوائم البيتزا والمطعم والكافيتيريا مع طلب سريع",
+        img: "assets/sc/sc-06-maestro-pizzeria.png",
+        pitch: "كيف تغلق هذه الصفقة (الفصل 13): تحويل قوائم الورق والـ PDF البطيئة إلى قائمة تفاعلية سريعة يرفع معدل طلبات الزبائن فورياً."
+      },
+      {
+        fig: "FIG.07",
+        title: "منصة SoloSolution Auto Parts: كتالوج قطع غيار السيارات (B2B)",
+        sector: "تجارة الجملة وتوزيع قطع غيار السيارات",
+        dzd: "30 إلى 48 مليون سنتيم (300,000 إلى 480,000 دج)",
+        delivery: "BUILD TIME: 6 DAYS WITH AI AGENTS",
+        chapter: "الفصل 6 (قواعد البيانات) + الفصل 9 (نظام TaskFlow الكامل)",
+        feature: "بحث برقم القطعة OEM + نظام طلب عروض أسعار للشركات والميكانيكيين",
+        img: "assets/sc/sc-07-solosolution-auto.png",
+        pitch: "كيف تغلق هذه الصفقة (الفصل 9): شركات التوزيع والاستيراد تتعامل بصفقات كبيرة، ومنصة B2B متكاملة تبرر بسهولة عقداً بـ 35 إلى 48 مليون سنتيم."
+      }
+    ];
+
+    const cards = document.querySelectorAll(".client-plate-card");
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        cards.forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+        const idx = parseInt(card.getAttribute("data-index"), 10);
+        const item = CLIENT_BUILDS_AR[idx];
+        if (!item) return;
+        document.getElementById("active-plate-indicator").textContent = "INSPECTING: " + item.fig;
+        document.getElementById("inspector-fig-code").textContent = "PLATE VIEWPORT // " + item.fig;
+        document.getElementById("inspector-delivery-time").textContent = item.delivery;
+        document.getElementById("inspector-main-img").src = item.img;
+        document.getElementById("inspector-title").textContent = item.title;
+        document.getElementById("inspector-sector").textContent = item.sector;
+        document.getElementById("inspector-dzd").textContent = item.dzd;
+        document.getElementById("inspector-chapter").textContent = item.chapter;
+        document.getElementById("inspector-feature").textContent = item.feature;
+        document.getElementById("inspector-pitch").innerHTML = "<strong>" + item.pitch.split(":")[0] + ":</strong>" + item.pitch.substring(item.pitch.indexOf(":") + 1);
+      });
+    });
+
+    const sitesInput = document.getElementById("calc-sites");
+    const priceInput = document.getElementById("calc-price");
+    function updateRoiCalculator() {
+      const sites = parseInt(sitesInput.value, 10);
+      const priceMillions = parseInt(priceInput.value, 10);
+      const totalMillions = sites * priceMillions;
+      const annualMillions = totalMillions * 12;
+      const totalDzd = totalMillions * 10000;
+      const roiMult = Math.round(totalDzd / 1990);
+
+      document.getElementById("calc-sites-lbl").textContent = sites + " مواقع / شهر";
+      document.getElementById("calc-price-lbl").textContent = priceMillions + " مليون سنتيم";
+      document.getElementById("out-monthly-dzd").textContent = totalMillions + "M Centimes";
+      document.getElementById("out-annual-dzd").textContent = annualMillions + "M Centimes";
+      document.getElementById("out-roi-mult").textContent = roiMult.toLocaleString("en-US") + "x ROI";
+    }
+    sitesInput.addEventListener("input", updateRoiCalculator);
+    priceInput.addEventListener("input", updateRoiCalculator);
+
+    const SPECIMENS = {
+      brief: `## AGENT SPECIFICATION BRIEF (STAGE 2: ARCHITECTURE)
+PROJECT: Groupe Médical EL-HAYAT Bilingual Portal + Lab Calculator
+TARGET STACK: Semantic HTML5, CSS Grid Tokens, Vanilla ES2024 Module
+
+CONSTRAINTS & ACCEPTANCE CRITERIA:
+1. Zero external UI runtime dependencies; First Contentful Paint &lt; 0.8s.
+2. Interactive Diagnostic Lab Calculator:
+   - Real-time DZD total calculation across 24 blood &amp; imaging panels
+   - 1-click WhatsApp pre-filled appointment &amp; prescription upload link
+3. Bilingual RTL/LTR switch (Arabic &amp; French) with tabular numerals.`,
+      sql: `// CHAPTER 8: INTERACTIVE DIAGNOSTIC LAB CALCULATOR ENGINE
+export function computeLabPanelEstimate(selectedTests, homeSampling = false) {
+  const baseTotalDzd = selectedTests.reduce((sum, item) => sum + item.priceDzd, 0);
+  const homeFeeDzd = homeSampling ? 500 : 0;
+  const finalTotalDzd = baseTotalDzd + homeFeeDzd;
+
+  return {
+    testCount: selectedTests.length,
+    formattedDzd: \`\${finalTotalDzd.toLocaleString('fr-DZ')} DZD\`,
+    whatsappPayload: encodeURIComponent(
+      \`Bonjour EL-HAYAT Lab, je souhaite réserver \${selectedTests.length} analyses (\${finalTotalDzd} DZD).\`
+    )
+  };
+}`,
+      sales: `## الفصل 13: سكريبت العرض المباشر للعيادات والمخابر (إغلاق صفقة بـ 25 مليون سنتيم)
+"دكتور، عندما يبحث المريض عن عيادتكم في المساء، فإنه يحتاج شيئين فوراً:
+1) معرفة التخصصات والأطباء المناوبين،
+2) حساب تكلفة التحاليل الطبية وحجز موعد بدون انتظار الهاتف.
+
+قبل تواصلي معكم اليوم، قمت ببناء نموذج حي يعمل الآن لعيادتكم مع حاسبة تحاليل تفاعلية ترسل الحجوزات مباشرة إلى واتساب الاستقبال. دعني أعرضه لك على هاتفك في دقيقتين..."`
+    };
+
+    const specimenBtns = document.querySelectorAll(".excerpt-tab-btn");
+    specimenBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        specimenBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const key = btn.getAttribute("data-specimen");
+        document.getElementById("specimen-output").textContent = SPECIMENS[key] || SPECIMENS.brief;
+      });
+    });
+
+    const copyRipBtn = document.getElementById("copy-rip-btn");
+    copyRipBtn.addEventListener("click", () => {
+      const rip = document.getElementById("rip-number").textContent.trim();
+      navigator.clipboard.writeText(rip).then(() => {
+        copyRipBtn.textContent = "تم نسخ RIP";
+        setTimeout(() => {
+          copyRipBtn.textContent = "نسخ رقم RIP";
+        }, 2200);
+      });
+    });
+
+    const sendWaBtn = document.getElementById("send-wa-order-btn");
+    sendWaBtn.addEventListener("click", () => {
+      const name = document.getElementById("wa-buyer-name").value.trim() || "عميل";
+      const email = document.getElementById("wa-buyer-email").value.trim() || "بريدي الإلكتروني";
+      const msg = `السلام عليكم @mkill_9! أريد طلب كتاب BUILD WITH AI AGENTS (406 صفحة + 3 مشاريع كاملة) بسعر 1,990 دج عبر BaridiMob.\n- الاسم: ${name}\n- الإيميل لاستلام الحزمة: ${email}\nسأرفق لك صورة وصل الدفع الآن.`;
+      const waUrl = `https://wa.me/${SELLER_CONFIG.whatsappPhone}?text=${encodeURIComponent(msg)}`;
+      window.open(waUrl, "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
